@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-image: url(https://i.pinimg.com/564x/c8/25/07/c825073e153226876a79cac2923a8310.jpg);
+    color: rgb(32, 222, 255);
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.menu-item {
+    width: 70%;
+    background-color: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 16px rgba(31, 10, 228, 0.2);
+}
+
+
+.menu-item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.menu-item h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .menu-item {
+        width: 95%;
+    }
+
+    .menu-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu-item h2 {
+        font-size: 20px;
+    }
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(252, 138, 31);
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(253, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.footer-button p {
+    font-size: 23px; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: 700; 
+    margin: 0; 
+    
+}
+
+.footer-button i {
+    font-size: 26px; 
+    margin-bottom: 5px;
+}
+
+.footer-button.active, .footer-button:hover {
+    color: #0adce4;
+}
+
+

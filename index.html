@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fast Food</title>
+    <link rel="stylesheet" href="login.css">
+   
+
 </head>
 <body>
-    
+    <div class="login-container">
+        <div class="login-box">
+            <h1>¡Hola!</h1>
+            <p>Únete a Amigos de Fast Food y disfruta de nuestras increibles promociones</p>
+            <button id="Soyamigo"class="main-button" >Soy Amigo Fast Food</button>
+            <script>
+                document.getElementById("Soyamigo").addEventListener("click",function(e) {
+                  e.preventDefault()
+                         window.location = "Seccion.html";
+                })
+              </script>
+        </div>
+    </div>
 </body>
 </html>

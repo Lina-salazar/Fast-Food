@@ -1,0 +1,2 @@
+[console_scripts]
+fastapp = fastapp._cli:cli
