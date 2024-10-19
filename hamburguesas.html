@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Hamburguesas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff5e6; /* Fondo cálido para tema de hamburguesas */
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff; /* Azul para el título principal */
+            text-align: center;
+            background-color: #c37b2998; /* Color de fondo beige claro */
+            border-radius: 6px; /* Bordes redondeados */
+        }
+        .menu-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .menu-item {
+            display: flex;
+            margin-bottom: 25px;
+            align-items: center;
+            border-bottom: 2px solid #ffd699;
+            padding-bottom: 20px;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px; /* Bordes redondeados para las imágenes */
+            margin-right: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .item-details h3 {
+            margin: 0 0 10px 0;
+            color: #cc5500; /* Marrón oscuro para los nombres de las hamburguesas */
+            font-size: 1.4em;
+        }
+        .item-details p {
+            margin: 0 0 10px 0;
+            color: #666;
+        }
+        .price {
+            font-weight: bold;
+            color: #009933; /* Verde oscuro para los precios */
+            font-size: 1.2em;
+        }
+        .special-tag {
+            background-color: #ff9933;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+        header {
+        background-image: url(https://i.pinimg.com/564x/c8/25/07/c825073e153226876a79cac2923a8310.jpg);
+        padding: 50px;
+        text-align: center;
+        font-size: 26px;
+        font-weight: bold;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            display: flex;
+            justify-content: space-between; /* Coloca los botones a la izquierda, centro y derecha */
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            border-radius: 5px;
+            border: none;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<header>
+    <h1>Nuestras hamburguesas</h1>
+</header>
+<body>
+    
+    <div class="menu-section">
+        <div class="menu-item">
+            <img src="https://simonparrilla.com.co/monteria/wp-content/uploads/2022/06/SIMON-PARRILLA-COMIDAS-RAPIDAS-HAMBURGUESA-CLASICA.webp" alt="Hamburguesa de Carne">
+            <div class="item-details">
+                <h3>Clásica de Carne</h3>
+                <p>Jugosa carne de res a la parrilla, lechuga fresca, tomate, cebolla y nuestra salsa especial en un pan suave.</p>
+                <p class="price">23.000 $</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://s1.elespanol.com/2022/12/20/como/727437656_229642729_1706x1280.jpg" alt="Hamburguesa de Pollo">
+            <div class="item-details">
+                <h3>Crujiente de Pollo</h3>
+                <p>Pechuga de pollo empanizada, lechuga iceberg, mayonesa casera y pepinillos en pan brioche.</p>
+                <p class="price">23.000 $</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://www.elespectador.com/resizer/v2/ZQUGSWWM2BBZXHEPBPMRIWX46U.jpg?auth=fba19f13a18b1a314f32e083e9d0727fbbe153571721015b63a21613680c519e&width=920&height=613&smart=true&quality=60" alt="Hamburguesa Doble Carne">
+            <div class="item-details">
+                <h3>Doble Impacto <span class="special-tag">Favorita</span></h3>
+                <p>Dos jugosas carnes de res, doble queso cheddar, bacon crujiente, cebolla caramelizada y salsa BBQ.</p>
+                <p class="price">30.000 $</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://www.diariocritico.com/fotos/1/348581_lefteris-kallergis-tlkivsw6do-unsplash_thumb_520.jpg" alt="Hamburguesa Vegetariana">
+            <div class="item-details">
+                <h3>Veggie Delight</h3>
+                <p>Deliciosa hamburguesa de garbanzos y espinacas, aguacate, rúcula, tomate y hummus en pan integral.</p>
+                <p class="price">20.000 $</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://img.freepik.com/fotos-premium/hamburguesa-gourmet-carne-res-premium-queso-azul-cebollas-caramelizadas-rucula-trufa-aioli_953733-28384.jpg" alt="Hamburguesa Gourmet">
+            <div class="item-details">
+                <h3>La Gourmet <span class="special-tag">Nueva</span></h3>
+                <p>Carne Angus premium, queso brie, cebolla morada confitada, rúcula y mayonesa de trufa en pan artesanal.</p>
+                <p class="price">38.000 $</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a class="btn btn-primary" href="#" role="button">◀ Menu</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
