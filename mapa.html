@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa en Grande con Salida</title>
+    <style>
+        /* Asegura que el cuerpo y el HTML ocupen el 100% de la pantalla */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Ajusta el iframe para que ocupe toda la pantalla */
+        .map-container {
+            height: 100%;  /* 100% de la altura de la pantalla */
+            width: 100%;   /* 100% del ancho de la pantalla */
+            position: relative; /* Para posicionar el botón */
+        }
+
+        iframe {
+            border: 0;  /* Sin bordes */
+            width: 100%; /* Ancho completo */
+            height: 100%; /* Altura completa */
+        }
+
+        /* Estilos del botón de salida */
+        .exit-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 20px 30px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .exit-btn:hover {
+            background-color: #fca401;
+        }
+    </style>
+</head>
+<body>
+    <div class="map-container">
+        <!-- Botón de salida -->
+        <button class="exit-btn" onclick="exitPage()">Salir a Manu</button>
+
+        <!-- Mapa embebido de Google Maps -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15666.654962204448!2d-74.79064370550196!3d10.988733711521055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d7974b945fd%3A0x58d2cc28a018ba1!2sUniversidad%20De%20La%20Costa%2C%20CUC!5e0!3m2!1ses!2sco!4v1729225949112!5m2!1ses!2sco" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <script>
+        // Función para salir de la página
+        function exitPage() {
+            // Redirige a otro archivo HTML en el mismo directorio
+            window.location.href = "menu.html"; // Cambia la URL según el archivo al que quieras redirigir
+        }
+    </script>
+</body>
+</html>

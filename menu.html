@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Fast Food</title>
     <link rel="stylesheet" href="menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
 
@@ -15,32 +16,53 @@
 <div class="menu">
     <div class="menu-item">
         <img src="https://i.pinimg.com/enabled/564x/b0/32/5d/b0325d99a0959e72636eaa63997c6057.jpg" alt="Bebidas">
-        <h2>Bebidas</h2>
+        <button id="bebidas"type="button" class="btn btn-outline-dark" href="bebidas.html">Bebidas</button>
+        <script>
+            document.getElementById("bebidas").addEventListener("click",function(e) {
+              e.preventDefault()
+                     window.location = "bebidas.html";
+            })
+          </script>
     </div>
     <div class="menu-item">
         <img src="https://i.pinimg.com/564x/9e/d2/cd/9ed2cdf068844508c8098f9a107ebdd6.jpg" alt="Hamburguesas">
-        <h2>Hamburguesas</h2>
+        <button id="hamburguesas"type="button" class="btn btn-outline-dark" href="hamburguesas.html">Hamburguesas</button>
+        <script>
+            document.getElementById("hamburguesas").addEventListener("click",function(e) {
+              e.preventDefault()
+                     window.location = "hamburguesas.html";
+            })
+          </script>
     </div>
     <div class="menu-item">
         <img src="https://i.pinimg.com/enabled/564x/b3/1c/07/b31c07845507efd85cfe3ba3e11a2352.jpg" alt="Perros">
-        <h2>Perros</h2>
+        <button id="hotdogs"type="button" class="btn btn-outline-dark" href="hotdogs.html">Perros</button>
+        <script>
+            document.getElementById("hotdogs").addEventListener("click",function(e) {
+              e.preventDefault()
+                     window.location = "hotdogs.html";
+            })
+          </script>
     </div>
-
+    
     <footer>
-        <button class="footer-button">
-            <i class="fas fa-sign-out-alt"></i>
-            <p>Salir</p>
-        </button>
-        <button class="footer-button active">
-            <i class="fas fa-utensils"></i>
-            <p>Menú</p>
-        </button>
-        <button class="footer-button">
-            <i class="fas fa-receipt"></i>
-            <p>Pedidos</p>
-        </button>
+        <button id="salir"type="button" class="btn btn-outline-dark" href="index.html">SALIR</button>
+        <script>
+            document.getElementById("salir").addEventListener("click",function(e) {
+              e.preventDefault()
+                     window.location = "index.html";
+            })
+          </script>
+        <button type="button" class="btn btn-outline-dark">MENU</button>
+        <button id="ubicacion" type="button" class="btn btn-outline-dark" href="mapa.html">UBICACIÓN</button>
+        <script>
+            document.getElementById("ubicacion").addEventListener("click",function(e) {
+              e.preventDefault()
+                     window.location = "mapa.html";
+            })
+          </script>
     </footer>
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

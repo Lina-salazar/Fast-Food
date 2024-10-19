@@ -93,7 +93,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: rgb(253, 255, 255);
+    color: rgb(8, 8, 8);
     font-size: 20px;
     cursor: pointer;
     transition: color 0.2s ease;
@@ -115,5 +115,11 @@ footer {
 .footer-button.active, .footer-button:hover {
     color: #0adce4;
 }
-
+body{
+    background-image: url("https://scontent.feoh11-1.fna.fbcdn.net/v/t39.30808-6/463816033_3447533742057364_6756412962340701449_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHvBKJJdnHl5U_Z7jqtjZap9hHYzM878wj2EdjMzzvzCJmImNpNzdDjSD7GU3L9VHLo6bcQYFZxOYn6oXLQJaoy&_nc_ohc=rmfgwQWe4HoQ7kNvgHZg7Ho&_nc_zt=23&_nc_ht=scontent.feoh11-1.fna&_nc_gid=A7G6voJwWIFHAJDugnR2c_W&oh=00_AYBnBnw4dt_cVdT6ZoC175EaERh0HKmWeQ31ibUBTJGuNw&oe=6718E8A5");
+    background-position: right;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
 
